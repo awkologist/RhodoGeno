@@ -1,2 +1,2 @@
 # RhodoGeno
-Accompanying our manuscript on Rhodobacter sphaeroides strain DSM158 and its substrain H2.
+Accompanying our manuscript with the title "Hybrid genome assemblies of R. sphaeroides DSM158 and its substrain H2".
