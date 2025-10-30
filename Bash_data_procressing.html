@@ -7510,14 +7510,23 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5d2d1a56-5626-4c80-84fa-1f41e0e613a4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="/index.html">back to main page</a></p>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0200d3e7-345e-4076-88f9-16f4c65cfdde">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr>
-<p><a href="index.html">Back to main page</a></p>
 <h1 id="MUMer-for-synteny-coords">MUMer for synteny coords<a class="anchor-link" href="#MUMer-for-synteny-coords">¶</a></h1>
 </div>
 </div>
@@ -7572,11 +7581,11 @@ show-coords<span class="w"> </span>-rcl<span class="w"> </span>-T<span class="w"
 # (maximum query length is 4294967295)
 # process 45203 characters per dot
 #....................................................................................................
-# CONSTRUCTIONTIME /usr/bin/mummer synteny.ntref 1.23
+# CONSTRUCTIONTIME /usr/bin/mummer synteny.ntref 1.30
 # reading input file "/home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/MUMer/../genomes/GCF_049434525.1_MWCSPHH2ANNA_genomic.fasta" of length 4520329
 # matching query-file "/home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/MUMer/../genomes/GCF_049434525.1_MWCSPHH2ANNA_genomic.fasta"
 # against subject-file "synteny.ntref"
-# COMPLETETIME /usr/bin/mummer synteny.ntref 4.06
+# COMPLETETIME /usr/bin/mummer synteny.ntref 4.19
 # SPACE /usr/bin/mummer synteny.ntref 8.75
 4: FINISHING DATA
 </pre>
@@ -7600,7 +7609,7 @@ show-coords<span class="w"> </span>-rcl<span class="w"> </span>-T<span class="w"
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-bash"><pre><span></span><span class="c1"># Mash installieren (falls nicht vorhanden)</span>
@@ -7698,35 +7707,35 @@ rm<span class="w"> </span>-r<span class="w"> </span>./DSM<span class="w"> </span
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>2025-10-30 07:28:54 INFO:	***** Start a BUSCO v6.0.0 analysis, current time: 10/30/2025 07:28:54 *****
-2025-10-30 07:28:54 INFO:	Configuring BUSCO with local environment
-2025-10-30 07:28:54 INFO:	Running genome mode
-2025-10-30 07:28:54 INFO:	Downloading information on latest versions of BUSCO data...
-2025-10-30 07:28:57 INFO:	Input file is /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/DSM158.fasta
-2025-10-30 07:28:57 INFO:	The local file or folder /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/busco_downloads/lineages/rhodobacter_odb12 is the last available version.
-2025-10-30 07:28:57 INFO:	Running BUSCO using lineage dataset rhodobacter_odb12 (prokaryota, 2025-05-14)
-2025-10-30 07:28:57 INFO:	Running 1 job(s) on bbtools, starting at 10/30/2025 07:28:57
-2025-10-30 07:28:58 INFO:	[bbtools]	1 of 1 task(s) completed
-2025-10-30 07:28:58 INFO:	***** Run Prodigal on input to predict and extract genes *****
-2025-10-30 07:28:58 INFO:	Running Prodigal with genetic code 11 in single mode
-2025-10-30 07:28:58 INFO:	Running 1 job(s) on prodigal, starting at 10/30/2025 07:28:58
-2025-10-30 07:29:07 INFO:	[prodigal]	1 of 1 task(s) completed
-2025-10-30 07:29:07 INFO:	Genetic code 11 selected as optimal
-2025-10-30 07:29:07 INFO:	***** Run HMMER on gene sequences *****
-2025-10-30 07:29:07 INFO:	Running 1343 job(s) on hmmsearch, starting at 10/30/2025 07:29:07
-2025-10-30 07:29:10 INFO:	[hmmsearch]	135 of 1343 task(s) completed
-2025-10-30 07:29:10 INFO:	[hmmsearch]	269 of 1343 task(s) completed
-2025-10-30 07:29:11 INFO:	[hmmsearch]	403 of 1343 task(s) completed
-2025-10-30 07:29:12 INFO:	[hmmsearch]	538 of 1343 task(s) completed
-2025-10-30 07:29:13 INFO:	[hmmsearch]	672 of 1343 task(s) completed
-2025-10-30 07:29:13 INFO:	[hmmsearch]	806 of 1343 task(s) completed
-2025-10-30 07:29:14 INFO:	[hmmsearch]	941 of 1343 task(s) completed
-2025-10-30 07:29:15 INFO:	[hmmsearch]	1075 of 1343 task(s) completed
-2025-10-30 07:29:16 INFO:	[hmmsearch]	1209 of 1343 task(s) completed
-2025-10-30 07:29:17 INFO:	[hmmsearch]	1343 of 1343 task(s) completed
-2025-10-30 07:29:19 INFO:	Results:	C:98.2%[S:98.0%,D:0.2%],F:0.5%,M:1.3%,n:1343	   
+<pre>2025-10-30 10:16:28 INFO:	***** Start a BUSCO v6.0.0 analysis, current time: 10/30/2025 10:16:28 *****
+2025-10-30 10:16:28 INFO:	Configuring BUSCO with local environment
+2025-10-30 10:16:28 INFO:	Running genome mode
+2025-10-30 10:16:28 INFO:	Downloading information on latest versions of BUSCO data...
+2025-10-30 10:16:30 INFO:	Input file is /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/DSM158.fasta
+2025-10-30 10:16:30 INFO:	The local file or folder /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/busco_downloads/lineages/rhodobacter_odb12 is the last available version.
+2025-10-30 10:16:31 INFO:	Running BUSCO using lineage dataset rhodobacter_odb12 (prokaryota, 2025-05-14)
+2025-10-30 10:16:31 INFO:	Running 1 job(s) on bbtools, starting at 10/30/2025 10:16:31
+2025-10-30 10:16:32 INFO:	[bbtools]	1 of 1 task(s) completed
+2025-10-30 10:16:32 INFO:	***** Run Prodigal on input to predict and extract genes *****
+2025-10-30 10:16:32 INFO:	Running Prodigal with genetic code 11 in single mode
+2025-10-30 10:16:32 INFO:	Running 1 job(s) on prodigal, starting at 10/30/2025 10:16:32
+2025-10-30 10:16:41 INFO:	[prodigal]	1 of 1 task(s) completed
+2025-10-30 10:16:42 INFO:	Genetic code 11 selected as optimal
+2025-10-30 10:16:42 INFO:	***** Run HMMER on gene sequences *****
+2025-10-30 10:16:42 INFO:	Running 1343 job(s) on hmmsearch, starting at 10/30/2025 10:16:42
+2025-10-30 10:16:44 INFO:	[hmmsearch]	135 of 1343 task(s) completed
+2025-10-30 10:16:45 INFO:	[hmmsearch]	269 of 1343 task(s) completed
+2025-10-30 10:16:45 INFO:	[hmmsearch]	403 of 1343 task(s) completed
+2025-10-30 10:16:46 INFO:	[hmmsearch]	538 of 1343 task(s) completed
+2025-10-30 10:16:47 INFO:	[hmmsearch]	672 of 1343 task(s) completed
+2025-10-30 10:16:48 INFO:	[hmmsearch]	806 of 1343 task(s) completed
+2025-10-30 10:16:48 INFO:	[hmmsearch]	941 of 1343 task(s) completed
+2025-10-30 10:16:49 INFO:	[hmmsearch]	1075 of 1343 task(s) completed
+2025-10-30 10:16:50 INFO:	[hmmsearch]	1209 of 1343 task(s) completed
+2025-10-30 10:16:52 INFO:	[hmmsearch]	1343 of 1343 task(s) completed
+2025-10-30 10:16:53 INFO:	Results:	C:98.2%[S:98.0%,D:0.2%],F:0.5%,M:1.3%,n:1343	   
 
-2025-10-30 07:29:19 INFO:	
+2025-10-30 10:16:53 INFO:	
 
     ---------------------------------------------------
     |Results from dataset rhodobacter_odb12            |
@@ -7739,41 +7748,41 @@ rm<span class="w"> </span>-r<span class="w"> </span>./DSM<span class="w"> </span
     |17    Missing BUSCOs (M)                          |
     |1343    Total BUSCO groups searched               |
     ---------------------------------------------------
-2025-10-30 07:29:19 INFO:	BUSCO analysis done. Total running time: 23 seconds
-2025-10-30 07:29:19 INFO:	Results written in /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/DSM
-2025-10-30 07:29:19 INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
+2025-10-30 10:16:53 INFO:	BUSCO analysis done. Total running time: 23 seconds
+2025-10-30 10:16:53 INFO:	Results written in /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/DSM
+2025-10-30 10:16:53 INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
 
-2025-10-30 07:29:19 INFO:	Visit this page https://gitlab.com/ezlab/busco#how-to-cite-busco to see how to cite BUSCO
-2025-10-30 07:29:19 INFO:	Thank you for using BUSCO! Anonymous usage data is gathered to improve the tool. You may opt out with --opt-out-run-stats.
-2025-10-30 07:29:20 INFO:	***** Start a BUSCO v6.0.0 analysis, current time: 10/30/2025 07:29:20 *****
-2025-10-30 07:29:20 INFO:	Configuring BUSCO with local environment
-2025-10-30 07:29:20 INFO:	Running genome mode
-2025-10-30 07:29:20 INFO:	Downloading information on latest versions of BUSCO data...
-2025-10-30 07:29:23 INFO:	Input file is /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/GCF_000012905.2_ASM1290v2_genomic.fasta
-2025-10-30 07:29:23 INFO:	The local file or folder /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/busco_downloads/lineages/rhodobacter_odb12 is the last available version.
-2025-10-30 07:29:23 INFO:	Running BUSCO using lineage dataset rhodobacter_odb12 (prokaryota, 2025-05-14)
-2025-10-30 07:29:23 INFO:	Running 1 job(s) on bbtools, starting at 10/30/2025 07:29:23
-2025-10-30 07:29:24 INFO:	[bbtools]	1 of 1 task(s) completed
-2025-10-30 07:29:24 INFO:	***** Run Prodigal on input to predict and extract genes *****
-2025-10-30 07:29:24 INFO:	Running Prodigal with genetic code 11 in single mode
-2025-10-30 07:29:24 INFO:	Running 1 job(s) on prodigal, starting at 10/30/2025 07:29:24
-2025-10-30 07:29:34 INFO:	[prodigal]	1 of 1 task(s) completed
-2025-10-30 07:29:35 INFO:	Genetic code 11 selected as optimal
-2025-10-30 07:29:35 INFO:	***** Run HMMER on gene sequences *****
-2025-10-30 07:29:35 INFO:	Running 1343 job(s) on hmmsearch, starting at 10/30/2025 07:29:35
-2025-10-30 07:29:37 INFO:	[hmmsearch]	135 of 1343 task(s) completed
-2025-10-30 07:29:38 INFO:	[hmmsearch]	269 of 1343 task(s) completed
-2025-10-30 07:29:39 INFO:	[hmmsearch]	403 of 1343 task(s) completed
-2025-10-30 07:29:39 INFO:	[hmmsearch]	538 of 1343 task(s) completed
-2025-10-30 07:29:40 INFO:	[hmmsearch]	672 of 1343 task(s) completed
-2025-10-30 07:29:41 INFO:	[hmmsearch]	806 of 1343 task(s) completed
-2025-10-30 07:29:42 INFO:	[hmmsearch]	941 of 1343 task(s) completed
-2025-10-30 07:29:42 INFO:	[hmmsearch]	1075 of 1343 task(s) completed
-2025-10-30 07:29:43 INFO:	[hmmsearch]	1209 of 1343 task(s) completed
-2025-10-30 07:29:45 INFO:	[hmmsearch]	1343 of 1343 task(s) completed
-2025-10-30 07:29:47 INFO:	Results:	C:98.5%[S:98.3%,D:0.2%],F:0.4%,M:1.1%,n:1343	   
+2025-10-30 10:16:53 INFO:	Visit this page https://gitlab.com/ezlab/busco#how-to-cite-busco to see how to cite BUSCO
+2025-10-30 10:16:53 INFO:	Thank you for using BUSCO! Anonymous usage data is gathered to improve the tool. You may opt out with --opt-out-run-stats.
+2025-10-30 10:16:54 INFO:	***** Start a BUSCO v6.0.0 analysis, current time: 10/30/2025 10:16:54 *****
+2025-10-30 10:16:54 INFO:	Configuring BUSCO with local environment
+2025-10-30 10:16:54 INFO:	Running genome mode
+2025-10-30 10:16:54 INFO:	Downloading information on latest versions of BUSCO data...
+2025-10-30 10:16:57 INFO:	Input file is /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/GCF_000012905.2_ASM1290v2_genomic.fasta
+2025-10-30 10:16:57 INFO:	The local file or folder /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/busco_downloads/lineages/rhodobacter_odb12 is the last available version.
+2025-10-30 10:16:57 INFO:	Running BUSCO using lineage dataset rhodobacter_odb12 (prokaryota, 2025-05-14)
+2025-10-30 10:16:57 INFO:	Running 1 job(s) on bbtools, starting at 10/30/2025 10:16:57
+2025-10-30 10:16:58 INFO:	[bbtools]	1 of 1 task(s) completed
+2025-10-30 10:16:58 INFO:	***** Run Prodigal on input to predict and extract genes *****
+2025-10-30 10:16:58 INFO:	Running Prodigal with genetic code 11 in single mode
+2025-10-30 10:16:58 INFO:	Running 1 job(s) on prodigal, starting at 10/30/2025 10:16:58
+2025-10-30 10:17:09 INFO:	[prodigal]	1 of 1 task(s) completed
+2025-10-30 10:17:09 INFO:	Genetic code 11 selected as optimal
+2025-10-30 10:17:09 INFO:	***** Run HMMER on gene sequences *****
+2025-10-30 10:17:09 INFO:	Running 1343 job(s) on hmmsearch, starting at 10/30/2025 10:17:09
+2025-10-30 10:17:11 INFO:	[hmmsearch]	135 of 1343 task(s) completed
+2025-10-30 10:17:12 INFO:	[hmmsearch]	269 of 1343 task(s) completed
+2025-10-30 10:17:12 INFO:	[hmmsearch]	403 of 1343 task(s) completed
+2025-10-30 10:17:13 INFO:	[hmmsearch]	538 of 1343 task(s) completed
+2025-10-30 10:17:14 INFO:	[hmmsearch]	672 of 1343 task(s) completed
+2025-10-30 10:17:15 INFO:	[hmmsearch]	806 of 1343 task(s) completed
+2025-10-30 10:17:15 INFO:	[hmmsearch]	941 of 1343 task(s) completed
+2025-10-30 10:17:16 INFO:	[hmmsearch]	1075 of 1343 task(s) completed
+2025-10-30 10:17:17 INFO:	[hmmsearch]	1209 of 1343 task(s) completed
+2025-10-30 10:17:19 INFO:	[hmmsearch]	1343 of 1343 task(s) completed
+2025-10-30 10:17:20 INFO:	Results:	C:98.5%[S:98.3%,D:0.2%],F:0.4%,M:1.1%,n:1343	   
 
-2025-10-30 07:29:47 INFO:	
+2025-10-30 10:17:21 INFO:	
 
     ---------------------------------------------------
     |Results from dataset rhodobacter_odb12            |
@@ -7786,40 +7795,41 @@ rm<span class="w"> </span>-r<span class="w"> </span>./DSM<span class="w"> </span
     |15    Missing BUSCOs (M)                          |
     |1343    Total BUSCO groups searched               |
     ---------------------------------------------------
-2025-10-30 07:29:47 INFO:	BUSCO analysis done. Total running time: 24 seconds
-2025-10-30 07:29:47 INFO:	Results written in /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/NCBI_Ref
-2025-10-30 07:29:47 INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
+2025-10-30 10:17:21 INFO:	BUSCO analysis done. Total running time: 24 seconds
+2025-10-30 10:17:21 INFO:	Results written in /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/NCBI_Ref
+2025-10-30 10:17:21 INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
 
-2025-10-30 07:29:47 INFO:	Visit this page https://gitlab.com/ezlab/busco#how-to-cite-busco to see how to cite BUSCO
-2025-10-30 07:29:47 INFO:	Thank you for using BUSCO! Anonymous usage data is gathered to improve the tool. You may opt out with --opt-out-run-stats.
-2025-10-30 07:29:48 INFO:	***** Start a BUSCO v6.0.0 analysis, current time: 10/30/2025 07:29:48 *****
-2025-10-30 07:29:48 INFO:	Configuring BUSCO with local environment
-2025-10-30 07:29:48 INFO:	Running genome mode
-2025-10-30 07:29:48 INFO:	Downloading information on latest versions of BUSCO data...
-2025-10-30 07:29:51 INFO:	Input file is /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/GCF_049434525.1_MWCSPHH2ANNA_genomic.fasta
-2025-10-30 07:29:51 INFO:	The local file or folder /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/busco_downloads/lineages/rhodobacter_odb12 is the last available version.
-2025-10-30 07:29:51 INFO:	Running BUSCO using lineage dataset rhodobacter_odb12 (prokaryota, 2025-05-14)
-2025-10-30 07:29:51 INFO:	Running 1 job(s) on bbtools, starting at 10/30/2025 07:29:51
-2025-10-30 07:29:52 INFO:	[bbtools]	1 of 1 task(s) completed
-2025-10-30 07:29:52 INFO:	***** Run Prodigal on input to predict and extract genes *****
-2025-10-30 07:29:52 INFO:	Running Prodigal with genetic code 11 in single mode
-2025-10-30 07:29:52 INFO:	Running 1 job(s) on prodigal, starting at 10/30/2025 07:29:52
-2025-10-30 07:30:01 INFO:	[prodigal]	1 of 1 task(s) completed
-2025-10-30 07:30:02 INFO:	Genetic code 11 selected as optimal
-2025-10-30 07:30:02 INFO:	***** Run HMMER on gene sequences *****
-2025-10-30 07:30:02 INFO:	Running 1343 job(s) on hmmsearch, starting at 10/30/2025 07:30:02
-2025-10-30 07:30:04 INFO:	[hmmsearch]	135 of 1343 task(s) completed
-2025-10-30 07:30:05 INFO:	[hmmsearch]	269 of 1343 task(s) completed
-2025-10-30 07:30:06 INFO:	[hmmsearch]	403 of 1343 task(s) completed
-2025-10-30 07:30:06 INFO:	[hmmsearch]	538 of 1343 task(s) completed
-2025-10-30 07:30:07 INFO:	[hmmsearch]	672 of 1343 task(s) completed
-2025-10-30 07:30:08 INFO:	[hmmsearch]	941 of 1343 task(s) completed
-2025-10-30 07:30:09 INFO:	[hmmsearch]	1075 of 1343 task(s) completed
-2025-10-30 07:30:10 INFO:	[hmmsearch]	1209 of 1343 task(s) completed
-2025-10-30 07:30:12 INFO:	[hmmsearch]	1343 of 1343 task(s) completed
-2025-10-30 07:30:13 INFO:	Results:	C:98.2%[S:98.1%,D:0.1%],F:0.5%,M:1.3%,n:1343	   
+2025-10-30 10:17:21 INFO:	Visit this page https://gitlab.com/ezlab/busco#how-to-cite-busco to see how to cite BUSCO
+2025-10-30 10:17:21 INFO:	Thank you for using BUSCO! Anonymous usage data is gathered to improve the tool. You may opt out with --opt-out-run-stats.
+2025-10-30 10:17:22 INFO:	***** Start a BUSCO v6.0.0 analysis, current time: 10/30/2025 10:17:22 *****
+2025-10-30 10:17:22 INFO:	Configuring BUSCO with local environment
+2025-10-30 10:17:22 INFO:	Running genome mode
+2025-10-30 10:17:22 INFO:	Downloading information on latest versions of BUSCO data...
+2025-10-30 10:17:24 INFO:	Input file is /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/GCF_049434525.1_MWCSPHH2ANNA_genomic.fasta
+2025-10-30 10:17:24 INFO:	The local file or folder /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/busco_downloads/lineages/rhodobacter_odb12 is the last available version.
+2025-10-30 10:17:24 INFO:	Running BUSCO using lineage dataset rhodobacter_odb12 (prokaryota, 2025-05-14)
+2025-10-30 10:17:24 INFO:	Running 1 job(s) on bbtools, starting at 10/30/2025 10:17:24
+2025-10-30 10:17:26 INFO:	[bbtools]	1 of 1 task(s) completed
+2025-10-30 10:17:26 INFO:	***** Run Prodigal on input to predict and extract genes *****
+2025-10-30 10:17:26 INFO:	Running Prodigal with genetic code 11 in single mode
+2025-10-30 10:17:26 INFO:	Running 1 job(s) on prodigal, starting at 10/30/2025 10:17:26
+2025-10-30 10:17:35 INFO:	[prodigal]	1 of 1 task(s) completed
+2025-10-30 10:17:35 INFO:	Genetic code 11 selected as optimal
+2025-10-30 10:17:35 INFO:	***** Run HMMER on gene sequences *****
+2025-10-30 10:17:35 INFO:	Running 1343 job(s) on hmmsearch, starting at 10/30/2025 10:17:35
+2025-10-30 10:17:38 INFO:	[hmmsearch]	135 of 1343 task(s) completed
+2025-10-30 10:17:38 INFO:	[hmmsearch]	269 of 1343 task(s) completed
+2025-10-30 10:17:39 INFO:	[hmmsearch]	403 of 1343 task(s) completed
+2025-10-30 10:17:40 INFO:	[hmmsearch]	538 of 1343 task(s) completed
+2025-10-30 10:17:41 INFO:	[hmmsearch]	672 of 1343 task(s) completed
+2025-10-30 10:17:41 INFO:	[hmmsearch]	806 of 1343 task(s) completed
+2025-10-30 10:17:42 INFO:	[hmmsearch]	941 of 1343 task(s) completed
+2025-10-30 10:17:43 INFO:	[hmmsearch]	1075 of 1343 task(s) completed
+2025-10-30 10:17:44 INFO:	[hmmsearch]	1209 of 1343 task(s) completed
+2025-10-30 10:17:45 INFO:	[hmmsearch]	1343 of 1343 task(s) completed
+2025-10-30 10:17:47 INFO:	Results:	C:98.2%[S:98.1%,D:0.1%],F:0.5%,M:1.3%,n:1343	   
 
-2025-10-30 07:30:14 INFO:	
+2025-10-30 10:17:47 INFO:	
 
     ---------------------------------------------------
     |Results from dataset rhodobacter_odb12            |
@@ -7832,12 +7842,12 @@ rm<span class="w"> </span>-r<span class="w"> </span>./DSM<span class="w"> </span
     |17    Missing BUSCOs (M)                          |
     |1343    Total BUSCO groups searched               |
     ---------------------------------------------------
-2025-10-30 07:30:14 INFO:	BUSCO analysis done. Total running time: 23 seconds
-2025-10-30 07:30:14 INFO:	Results written in /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/SUBH2
-2025-10-30 07:30:14 INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
+2025-10-30 10:17:47 INFO:	BUSCO analysis done. Total running time: 23 seconds
+2025-10-30 10:17:47 INFO:	Results written in /home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/SUBH2
+2025-10-30 10:17:47 INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
 
-2025-10-30 07:30:14 INFO:	Visit this page https://gitlab.com/ezlab/busco#how-to-cite-busco to see how to cite BUSCO
-2025-10-30 07:30:14 INFO:	Thank you for using BUSCO! Anonymous usage data is gathered to improve the tool. You may opt out with --opt-out-run-stats.
+2025-10-30 10:17:47 INFO:	Visit this page https://gitlab.com/ezlab/busco#how-to-cite-busco to see how to cite BUSCO
+2025-10-30 10:17:47 INFO:	Thank you for using BUSCO! Anonymous usage data is gathered to improve the tool. You may opt out with --opt-out-run-stats.
 mkdir: cannot create directory ‘busco’: File exists
 </pre>
 </div>
@@ -7860,7 +7870,7 @@ mkdir: cannot create directory ‘busco’: File exists
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-bash"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>checkm2
@@ -7879,17 +7889,17 @@ checkm2<span class="w"> </span>predict<span class="w"> </span>--threads<span cla
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[10/30/2025 07:32:12 AM] INFO: Running CheckM2 version 1.1.0
-[10/30/2025 07:32:12 AM] INFO: Running quality prediction workflow with 30 threads.
-[10/30/2025 07:32:12 AM] INFO: Calling genes in 3 bins with 30 threads:
+<pre>[10/30/2025 10:17:54 AM] INFO: Running CheckM2 version 1.1.0
+[10/30/2025 10:17:54 AM] INFO: Running quality prediction workflow with 30 threads.
+[10/30/2025 10:17:55 AM] INFO: Calling genes in 3 bins with 30 threads:
     Finished processing 3 of 3 (100.00%) bins.
-[10/30/2025 07:32:47 AM] INFO: Calculating metadata for 3 bins with 30 threads:
+[10/30/2025 10:18:31 AM] INFO: Calculating metadata for 3 bins with 30 threads:
     Finished processing 3 of 3 (100.00%) bin metadata.
-[10/30/2025 07:32:48 AM] INFO: Annotating input genomes with DIAMOND using 30 threads
-[10/30/2025 07:33:27 AM] INFO: Processing DIAMOND output
-[10/30/2025 07:33:27 AM] INFO: Predicting completeness and contamination using ML models.
-[10/30/2025 07:33:32 AM] INFO: Parsing all results and constructing final output table.
-[10/30/2025 07:33:32 AM] INFO: CheckM2 finished successfully.
+[10/30/2025 10:18:31 AM] INFO: Annotating input genomes with DIAMOND using 30 threads
+[10/30/2025 10:19:09 AM] INFO: Processing DIAMOND output
+[10/30/2025 10:19:09 AM] INFO: Predicting completeness and contamination using ML models.
+[10/30/2025 10:19:14 AM] INFO: Parsing all results and constructing final output table.
+[10/30/2025 10:19:14 AM] INFO: CheckM2 finished successfully.
 </pre>
 </div>
 </div>
@@ -7922,7 +7932,7 @@ checkm2<span class="w"> </span>predict<span class="w"> </span>--threads<span cla
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-bash"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/Ppanggolin/
@@ -7976,7 +7986,7 @@ GCF_002706325.1_ASM270632v1_genomic.fasta^I/home/Drives/HDD03_06T_SDE/anna/Synte
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-bash"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/Ppanggolin/
@@ -8026,7 +8036,7 @@ DSM158.gbk^I/home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/Annot/DS
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-bash"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/Ppanggolin/
@@ -8045,72 +8055,72 @@ conda<span class="w"> </span>deactivate
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>2025-10-30 07:33:40 main.py:l146 INFO	Command: /home/jupyter-anna/.conda/envs/ppanggolin/bin/ppanggolin workflow -f -o ./output --cpu 20 --fasta genomes.fasta.list
-2025-10-30 07:33:40 main.py:l147 INFO	PPanGGOLiN version: 1.0.13
-2025-10-30 07:33:40 annotate.py:l361 INFO	Reading genomes.fasta.list the list of organism files
-2025-10-30 07:33:40 annotate.py:l372 INFO	Annotating 18 genomes using 20 cpus...
-100%|███████████████████████████████████████| 18/18 [00:16&lt;00:00,  1.08genome/s]
-2025-10-30 07:33:56 annotate.py:l382 INFO	Done annotating genomes
-2025-10-30 07:33:56 writeBinaries.py:l387 INFO	Writing genome annotations...
-100%|███████████████████████████████████████| 18/18 [00:00&lt;00:00, 72.01genome/s]
-2025-10-30 07:33:57 writeBinaries.py:l400 INFO	writing the protein coding gene dna sequences
-100%|███████████████████████████████| 78057/78057 [00:00&lt;00:00, 100503.29gene/s]
-2025-10-30 07:33:58 writeBinaries.py:l426 INFO	Done writing the pangenome. It is in file : output/pangenome.h5
-2025-10-30 07:33:58 cluster.py:l158 INFO	Writing all of the CDS sequences for clustering...
-100%|███████████████████████████████| 78057/78057 [00:00&lt;00:00, 282215.96gene/s]
-2025-10-30 07:33:58 cluster.py:l201 INFO	Clustering all of the genes sequences...
-2025-10-30 07:33:58 cluster.py:l45 INFO	Creating sequence database...
-2025-10-30 07:33:59 cluster.py:l54 INFO	Clustering sequences...
-2025-10-30 07:34:01 cluster.py:l56 INFO	Extracting cluster representatives...
-2025-10-30 07:34:01 cluster.py:l68 INFO	Writing gene to family informations
-2025-10-30 07:34:02 cluster.py:l148 INFO	Adding protein sequences to the gene families
-2025-10-30 07:34:02 cluster.py:l130 INFO	Adding 78057 genes to the gene families
-100%|███████████████████████████████| 78057/78057 [00:00&lt;00:00, 165664.16gene/s]
-2025-10-30 07:34:02 makeGraph.py:l56 INFO	Computing the neighbors graph...
-Processing GCF_052246835.1_ASM5224683v1_genomic.fasta: 100%|█| 18/18 [00:00&lt;00:0
-2025-10-30 07:34:03 makeGraph.py:l74 INFO	Done making the neighbors graph.
-2025-10-30 07:34:03 partition.py:l349 INFO	Estimating the optimal number of partitions...
-100%|███████████████| 19/19 [00:01&lt;00:00, 11.57Number of number of partitions/s]
-2025-10-30 07:34:05 partition.py:l351 INFO	The number of partitions has been evaluated at 3
-2025-10-30 07:34:05 partition.py:l369 INFO	Partitioning...
-2025-10-30 07:34:05 partition.py:l429 INFO	Partitionned 18 genomes in 0.32 seconds.
-2025-10-30 07:34:05 writeBinaries.py:l405 INFO	Writing gene families and gene associations...
-100%|███████████████████████████| 6705/6705 [00:00&lt;00:00, 64438.45gene family/s]
-2025-10-30 07:34:05 writeBinaries.py:l407 INFO	Writing gene families information...
-100%|██████████████████████████| 6705/6705 [00:00&lt;00:00, 315083.84gene family/s]
-2025-10-30 07:34:05 writeBinaries.py:l414 INFO	Writing the edges...
-100%|██████████████████████████████████| 7973/7973 [00:00&lt;00:00, 79821.23edge/s]
-2025-10-30 07:34:05 writeBinaries.py:l328 INFO	Updating gene families with partition information
-100%|██████████████████████████| 6705/6705 [00:00&lt;00:00, 218842.62gene family/s]
-2025-10-30 07:34:05 writeBinaries.py:l426 INFO	Done writing the pangenome. It is in file : output/pangenome.h5
-2025-10-30 07:34:05 tile_plot.py:l38 INFO	Drawing the tile plot...
-2025-10-30 07:34:05 tile_plot.py:l54 INFO	start with matrice
-2025-10-30 07:34:05 tile_plot.py:l69 INFO	done with making the dendrogram to order the organisms on the plot
-2025-10-30 07:34:05 tile_plot.py:l104 INFO	Getting the gene name(s) and the number for each tile of the plot ...
-2025-10-30 07:34:06 tile_plot.py:l113 INFO	Done extracting names and numbers. Making the heatmap ...
-2025-10-30 07:34:06 tile_plot.py:l169 INFO	Drawing the figure itself...
-2025-10-30 07:34:09 tile_plot.py:l171 INFO	Done with the tile plot : './output/tile_plot.html' 
-2025-10-30 07:34:09 ucurve.py:l13 INFO	Drawing the U-shaped curve...
-2025-10-30 07:34:09 ucurve.py:l60 INFO	Done drawing the U-shaped curve : './output/Ushaped_plot.html'
-2025-10-30 07:34:09 writeFlat.py:l225 INFO	Writing the .csv file ...
-2025-10-30 07:34:09 writeFlat.py:l281 INFO	Writing the gene presence absence file ...
-2025-10-30 07:34:09 writeFlat.py:l213 INFO	Writing the gexf file for the pangenome graph...
-2025-10-30 07:34:09 writeFlat.py:l213 INFO	Writing the light gexf file for the pangenome graph...
-2025-10-30 07:34:09 writeFlat.py:l421 INFO	Writing the projection files...
-2025-10-30 07:34:09 writeFlat.py:l304 INFO	Writing pangenome statistics...
-2025-10-30 07:34:09 writeFlat.py:l305 INFO	Writing statistics on persistent duplication...
-2025-10-30 07:34:09 writeFlat.py:l106 INFO	Writing the json file for the pangenome graph...
-2025-10-30 07:34:09 writeFlat.py:l430 INFO	Writing the list of gene families for each partitions...
-2025-10-30 07:34:09 writeFlat.py:l301 INFO	Done writing the gene presence absence file : './output/gene_presence_absence.Rtab'
-2025-10-30 07:34:09 writeFlat.py:l456 INFO	Done writing the list of gene families for each partition
-2025-10-30 07:34:09 writeFlat.py:l326 INFO	Done writing stats on persistent duplication
-2025-10-30 07:34:09 writeFlat.py:l327 INFO	Writing genome per genome statistics (completeness and counts)...
-2025-10-30 07:34:10 writeFlat.py:l389 INFO	Done writing genome per genome statistics
-2025-10-30 07:34:10 writeFlat.py:l222 INFO	Done writing the gexf file : './output/pangenomeGraph_light.gexf'
-2025-10-30 07:34:10 writeFlat.py:l278 INFO	Done writing the matrix : './output/matrix.csv'
-2025-10-30 07:34:10 writeFlat.py:l222 INFO	Done writing the gexf file : './output/pangenomeGraph.gexf'
-2025-10-30 07:34:10 writeFlat.py:l427 INFO	Done writing the projection files
-2025-10-30 07:34:11 writeFlat.py:l113 INFO	Done writing the json file : './output/pangenomeGraph.json'
+<pre>2025-10-30 10:19:18 main.py:l146 INFO	Command: /home/jupyter-anna/.conda/envs/ppanggolin/bin/ppanggolin workflow -f -o ./output --cpu 20 --fasta genomes.fasta.list
+2025-10-30 10:19:18 main.py:l147 INFO	PPanGGOLiN version: 1.0.13
+2025-10-30 10:19:18 annotate.py:l361 INFO	Reading genomes.fasta.list the list of organism files
+2025-10-30 10:19:18 annotate.py:l372 INFO	Annotating 18 genomes using 20 cpus...
+100%|███████████████████████████████████████| 18/18 [00:16&lt;00:00,  1.09genome/s]
+2025-10-30 10:19:34 annotate.py:l382 INFO	Done annotating genomes
+2025-10-30 10:19:34 writeBinaries.py:l387 INFO	Writing genome annotations...
+100%|███████████████████████████████████████| 18/18 [00:00&lt;00:00, 67.80genome/s]
+2025-10-30 10:19:35 writeBinaries.py:l400 INFO	writing the protein coding gene dna sequences
+100%|███████████████████████████████| 78057/78057 [00:00&lt;00:00, 111746.81gene/s]
+2025-10-30 10:19:36 writeBinaries.py:l426 INFO	Done writing the pangenome. It is in file : output/pangenome.h5
+2025-10-30 10:19:36 cluster.py:l158 INFO	Writing all of the CDS sequences for clustering...
+100%|███████████████████████████████| 78057/78057 [00:00&lt;00:00, 299463.52gene/s]
+2025-10-30 10:19:36 cluster.py:l201 INFO	Clustering all of the genes sequences...
+2025-10-30 10:19:36 cluster.py:l45 INFO	Creating sequence database...
+2025-10-30 10:19:36 cluster.py:l54 INFO	Clustering sequences...
+2025-10-30 10:19:39 cluster.py:l56 INFO	Extracting cluster representatives...
+2025-10-30 10:19:39 cluster.py:l68 INFO	Writing gene to family informations
+2025-10-30 10:19:40 cluster.py:l148 INFO	Adding protein sequences to the gene families
+2025-10-30 10:19:40 cluster.py:l130 INFO	Adding 78057 genes to the gene families
+100%|███████████████████████████████| 78057/78057 [00:00&lt;00:00, 168441.98gene/s]
+2025-10-30 10:19:40 makeGraph.py:l56 INFO	Computing the neighbors graph...
+Processing GCF_000021005.1_ASM2100v1_genomic.fasta: 100%|█| 18/18 [00:00&lt;00:00, 
+2025-10-30 10:19:41 makeGraph.py:l74 INFO	Done making the neighbors graph.
+2025-10-30 10:19:41 partition.py:l349 INFO	Estimating the optimal number of partitions...
+100%|███████████████| 19/19 [00:01&lt;00:00,  9.82Number of number of partitions/s]
+2025-10-30 10:19:43 partition.py:l351 INFO	The number of partitions has been evaluated at 3
+2025-10-30 10:19:43 partition.py:l369 INFO	Partitioning...
+2025-10-30 10:19:43 partition.py:l429 INFO	Partitionned 18 genomes in 0.36 seconds.
+2025-10-30 10:19:43 writeBinaries.py:l405 INFO	Writing gene families and gene associations...
+100%|███████████████████████████| 6705/6705 [00:00&lt;00:00, 74871.77gene family/s]
+2025-10-30 10:19:43 writeBinaries.py:l407 INFO	Writing gene families information...
+100%|██████████████████████████| 6705/6705 [00:00&lt;00:00, 282897.18gene family/s]
+2025-10-30 10:19:43 writeBinaries.py:l414 INFO	Writing the edges...
+100%|██████████████████████████████████| 7973/7973 [00:00&lt;00:00, 70506.70edge/s]
+2025-10-30 10:19:43 writeBinaries.py:l328 INFO	Updating gene families with partition information
+100%|██████████████████████████| 6705/6705 [00:00&lt;00:00, 195732.24gene family/s]
+2025-10-30 10:19:43 writeBinaries.py:l426 INFO	Done writing the pangenome. It is in file : output/pangenome.h5
+2025-10-30 10:19:43 tile_plot.py:l38 INFO	Drawing the tile plot...
+2025-10-30 10:19:43 tile_plot.py:l54 INFO	start with matrice
+2025-10-30 10:19:44 tile_plot.py:l69 INFO	done with making the dendrogram to order the organisms on the plot
+2025-10-30 10:19:44 tile_plot.py:l104 INFO	Getting the gene name(s) and the number for each tile of the plot ...
+2025-10-30 10:19:44 tile_plot.py:l113 INFO	Done extracting names and numbers. Making the heatmap ...
+2025-10-30 10:19:44 tile_plot.py:l169 INFO	Drawing the figure itself...
+2025-10-30 10:19:48 tile_plot.py:l171 INFO	Done with the tile plot : './output/tile_plot.html' 
+2025-10-30 10:19:48 ucurve.py:l13 INFO	Drawing the U-shaped curve...
+2025-10-30 10:19:48 ucurve.py:l60 INFO	Done drawing the U-shaped curve : './output/Ushaped_plot.html'
+2025-10-30 10:19:48 writeFlat.py:l225 INFO	Writing the .csv file ...
+2025-10-30 10:19:48 writeFlat.py:l281 INFO	Writing the gene presence absence file ...
+2025-10-30 10:19:48 writeFlat.py:l213 INFO	Writing the gexf file for the pangenome graph...
+2025-10-30 10:19:48 writeFlat.py:l213 INFO	Writing the light gexf file for the pangenome graph...
+2025-10-30 10:19:48 writeFlat.py:l421 INFO	Writing the projection files...
+2025-10-30 10:19:48 writeFlat.py:l304 INFO	Writing pangenome statistics...
+2025-10-30 10:19:48 writeFlat.py:l305 INFO	Writing statistics on persistent duplication...
+2025-10-30 10:19:48 writeFlat.py:l106 INFO	Writing the json file for the pangenome graph...
+2025-10-30 10:19:48 writeFlat.py:l430 INFO	Writing the list of gene families for each partitions...
+2025-10-30 10:19:48 writeFlat.py:l456 INFO	Done writing the list of gene families for each partition
+2025-10-30 10:19:48 writeFlat.py:l301 INFO	Done writing the gene presence absence file : './output/gene_presence_absence.Rtab'
+2025-10-30 10:19:48 writeFlat.py:l326 INFO	Done writing stats on persistent duplication
+2025-10-30 10:19:48 writeFlat.py:l327 INFO	Writing genome per genome statistics (completeness and counts)...
+2025-10-30 10:19:48 writeFlat.py:l389 INFO	Done writing genome per genome statistics
+2025-10-30 10:19:48 writeFlat.py:l278 INFO	Done writing the matrix : './output/matrix.csv'
+2025-10-30 10:19:48 writeFlat.py:l222 INFO	Done writing the gexf file : './output/pangenomeGraph_light.gexf'
+2025-10-30 10:19:49 writeFlat.py:l427 INFO	Done writing the projection files
+2025-10-30 10:19:49 writeFlat.py:l222 INFO	Done writing the gexf file : './output/pangenomeGraph.gexf'
+2025-10-30 10:19:49 writeFlat.py:l113 INFO	Done writing the json file : './output/pangenomeGraph.json'
 Genes : 78057
 Organisms : 18
 Families : 6705
@@ -8129,7 +8139,7 @@ Number of partitions : 3
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-bash"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/Ppanggolin/
@@ -8148,70 +8158,70 @@ conda<span class="w"> </span>deactivate
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>2025-10-30 07:34:13 main.py:l146 INFO	Command: /home/jupyter-anna/.conda/envs/ppanggolin/bin/ppanggolin workflow -f -o ./output --cpu 20 --anno genomes.gbff.list
-2025-10-30 07:34:13 main.py:l147 INFO	PPanGGOLiN version: 1.0.13
-2025-10-30 07:34:13 annotate.py:l309 INFO	Reading genomes.gbff.list the list of organism files ...
-Processing DSM158.gbk: 100%|███████| 18/18 [00:07&lt;00:00,  2.26annotation file/s]
-2025-10-30 07:34:21 writeBinaries.py:l387 INFO	Writing genome annotations...
-100%|██████████████████████████████████████| 18/18 [00:00&lt;00:00, 109.93genome/s]
-2025-10-30 07:34:21 writeBinaries.py:l400 INFO	writing the protein coding gene dna sequences
-100%|███████████████████████████████| 77147/77147 [00:00&lt;00:00, 118829.94gene/s]
-2025-10-30 07:34:22 writeBinaries.py:l426 INFO	Done writing the pangenome. It is in file : output/pangenome.h5
-2025-10-30 07:34:22 cluster.py:l158 INFO	Writing all of the CDS sequences for clustering...
-100%|███████████████████████████████| 77147/77147 [00:00&lt;00:00, 369860.88gene/s]
-2025-10-30 07:34:22 cluster.py:l201 INFO	Clustering all of the genes sequences...
-2025-10-30 07:34:22 cluster.py:l45 INFO	Creating sequence database...
-2025-10-30 07:34:23 cluster.py:l54 INFO	Clustering sequences...
-2025-10-30 07:34:25 cluster.py:l56 INFO	Extracting cluster representatives...
-2025-10-30 07:34:25 cluster.py:l68 INFO	Writing gene to family informations
-2025-10-30 07:34:26 cluster.py:l148 INFO	Adding protein sequences to the gene families
-2025-10-30 07:34:26 cluster.py:l130 INFO	Adding 77147 genes to the gene families
-100%|███████████████████████████████| 77147/77147 [00:00&lt;00:00, 231714.35gene/s]
-2025-10-30 07:34:26 makeGraph.py:l56 INFO	Computing the neighbors graph...
-Processing DSM158.gbk: 100%|██████████████| 18/18 [00:00&lt;00:00, 43.20organism/s]
-2025-10-30 07:34:26 makeGraph.py:l74 INFO	Done making the neighbors graph.
-2025-10-30 07:34:26 partition.py:l349 INFO	Estimating the optimal number of partitions...
-100%|███████████████| 19/19 [00:01&lt;00:00, 11.51Number of number of partitions/s]
-2025-10-30 07:34:28 partition.py:l351 INFO	The number of partitions has been evaluated at 3
-2025-10-30 07:34:28 partition.py:l369 INFO	Partitioning...
-2025-10-30 07:34:28 partition.py:l429 INFO	Partitionned 18 genomes in 0.32 seconds.
-2025-10-30 07:34:28 writeBinaries.py:l405 INFO	Writing gene families and gene associations...
-100%|██████████████████████████| 6224/6224 [00:00&lt;00:00, 114980.26gene family/s]
-2025-10-30 07:34:29 writeBinaries.py:l407 INFO	Writing gene families information...
-100%|██████████████████████████| 6224/6224 [00:00&lt;00:00, 321506.31gene family/s]
-2025-10-30 07:34:29 writeBinaries.py:l414 INFO	Writing the edges...
-100%|██████████████████████████████████| 7398/7398 [00:00&lt;00:00, 99949.62edge/s]
-2025-10-30 07:34:29 writeBinaries.py:l328 INFO	Updating gene families with partition information
-100%|██████████████████████████| 6224/6224 [00:00&lt;00:00, 218595.65gene family/s]
-2025-10-30 07:34:29 writeBinaries.py:l426 INFO	Done writing the pangenome. It is in file : output/pangenome.h5
-2025-10-30 07:34:29 tile_plot.py:l38 INFO	Drawing the tile plot...
-2025-10-30 07:34:29 tile_plot.py:l54 INFO	start with matrice
-2025-10-30 07:34:29 tile_plot.py:l69 INFO	done with making the dendrogram to order the organisms on the plot
-2025-10-30 07:34:29 tile_plot.py:l104 INFO	Getting the gene name(s) and the number for each tile of the plot ...
-2025-10-30 07:34:29 tile_plot.py:l113 INFO	Done extracting names and numbers. Making the heatmap ...
-2025-10-30 07:34:29 tile_plot.py:l169 INFO	Drawing the figure itself...
-2025-10-30 07:34:32 tile_plot.py:l171 INFO	Done with the tile plot : './output/tile_plot.html' 
-2025-10-30 07:34:32 ucurve.py:l13 INFO	Drawing the U-shaped curve...
-2025-10-30 07:34:32 ucurve.py:l60 INFO	Done drawing the U-shaped curve : './output/Ushaped_plot.html'
-2025-10-30 07:34:32 writeFlat.py:l225 INFO	Writing the .csv file ...
-2025-10-30 07:34:32 writeFlat.py:l281 INFO	Writing the gene presence absence file ...
-2025-10-30 07:34:32 writeFlat.py:l213 INFO	Writing the gexf file for the pangenome graph...
-2025-10-30 07:34:32 writeFlat.py:l213 INFO	Writing the light gexf file for the pangenome graph...
-2025-10-30 07:34:32 writeFlat.py:l421 INFO	Writing the projection files...
-2025-10-30 07:34:32 writeFlat.py:l304 INFO	Writing pangenome statistics...
-2025-10-30 07:34:32 writeFlat.py:l305 INFO	Writing statistics on persistent duplication...
-2025-10-30 07:34:32 writeFlat.py:l106 INFO	Writing the json file for the pangenome graph...
-2025-10-30 07:34:32 writeFlat.py:l430 INFO	Writing the list of gene families for each partitions...
-2025-10-30 07:34:32 writeFlat.py:l301 INFO	Done writing the gene presence absence file : './output/gene_presence_absence.Rtab'
-2025-10-30 07:34:32 writeFlat.py:l456 INFO	Done writing the list of gene families for each partition
-2025-10-30 07:34:32 writeFlat.py:l326 INFO	Done writing stats on persistent duplication
-2025-10-30 07:34:32 writeFlat.py:l327 INFO	Writing genome per genome statistics (completeness and counts)...
-2025-10-30 07:34:32 writeFlat.py:l389 INFO	Done writing genome per genome statistics
-2025-10-30 07:34:33 writeFlat.py:l222 INFO	Done writing the gexf file : './output/pangenomeGraph_light.gexf'
-2025-10-30 07:34:33 writeFlat.py:l278 INFO	Done writing the matrix : './output/matrix.csv'
-2025-10-30 07:34:33 writeFlat.py:l427 INFO	Done writing the projection files
-2025-10-30 07:34:33 writeFlat.py:l222 INFO	Done writing the gexf file : './output/pangenomeGraph.gexf'
-2025-10-30 07:34:33 writeFlat.py:l113 INFO	Done writing the json file : './output/pangenomeGraph.json'
+<pre>2025-10-30 10:19:52 main.py:l146 INFO	Command: /home/jupyter-anna/.conda/envs/ppanggolin/bin/ppanggolin workflow -f -o ./output --cpu 20 --anno genomes.gbff.list
+2025-10-30 10:19:52 main.py:l147 INFO	PPanGGOLiN version: 1.0.13
+2025-10-30 10:19:52 annotate.py:l309 INFO	Reading genomes.gbff.list the list of organism files ...
+Processing DSM158.gbk: 100%|███████| 18/18 [00:09&lt;00:00,  1.95annotation file/s]
+2025-10-30 10:20:01 writeBinaries.py:l387 INFO	Writing genome annotations...
+100%|███████████████████████████████████████| 18/18 [00:00&lt;00:00, 92.12genome/s]
+2025-10-30 10:20:01 writeBinaries.py:l400 INFO	writing the protein coding gene dna sequences
+100%|███████████████████████████████| 77147/77147 [00:00&lt;00:00, 105161.82gene/s]
+2025-10-30 10:20:02 writeBinaries.py:l426 INFO	Done writing the pangenome. It is in file : output/pangenome.h5
+2025-10-30 10:20:02 cluster.py:l158 INFO	Writing all of the CDS sequences for clustering...
+100%|███████████████████████████████| 77147/77147 [00:00&lt;00:00, 323343.87gene/s]
+2025-10-30 10:20:02 cluster.py:l201 INFO	Clustering all of the genes sequences...
+2025-10-30 10:20:02 cluster.py:l45 INFO	Creating sequence database...
+2025-10-30 10:20:03 cluster.py:l54 INFO	Clustering sequences...
+2025-10-30 10:20:05 cluster.py:l56 INFO	Extracting cluster representatives...
+2025-10-30 10:20:05 cluster.py:l68 INFO	Writing gene to family informations
+2025-10-30 10:20:06 cluster.py:l148 INFO	Adding protein sequences to the gene families
+2025-10-30 10:20:06 cluster.py:l130 INFO	Adding 77147 genes to the gene families
+100%|███████████████████████████████| 77147/77147 [00:00&lt;00:00, 230322.64gene/s]
+2025-10-30 10:20:06 makeGraph.py:l56 INFO	Computing the neighbors graph...
+Processing DSM158.gbk: 100%|██████████████| 18/18 [00:00&lt;00:00, 42.71organism/s]
+2025-10-30 10:20:07 makeGraph.py:l74 INFO	Done making the neighbors graph.
+2025-10-30 10:20:07 partition.py:l349 INFO	Estimating the optimal number of partitions...
+100%|███████████████| 19/19 [00:01&lt;00:00, 11.59Number of number of partitions/s]
+2025-10-30 10:20:08 partition.py:l351 INFO	The number of partitions has been evaluated at 3
+2025-10-30 10:20:08 partition.py:l369 INFO	Partitioning...
+2025-10-30 10:20:09 partition.py:l429 INFO	Partitionned 18 genomes in 0.31 seconds.
+2025-10-30 10:20:09 writeBinaries.py:l405 INFO	Writing gene families and gene associations...
+100%|██████████████████████████| 6224/6224 [00:00&lt;00:00, 107409.53gene family/s]
+2025-10-30 10:20:09 writeBinaries.py:l407 INFO	Writing gene families information...
+100%|██████████████████████████| 6224/6224 [00:00&lt;00:00, 312541.58gene family/s]
+2025-10-30 10:20:09 writeBinaries.py:l414 INFO	Writing the edges...
+100%|██████████████████████████████████| 7398/7398 [00:00&lt;00:00, 97064.43edge/s]
+2025-10-30 10:20:09 writeBinaries.py:l328 INFO	Updating gene families with partition information
+100%|██████████████████████████| 6224/6224 [00:00&lt;00:00, 195830.26gene family/s]
+2025-10-30 10:20:09 writeBinaries.py:l426 INFO	Done writing the pangenome. It is in file : output/pangenome.h5
+2025-10-30 10:20:09 tile_plot.py:l38 INFO	Drawing the tile plot...
+2025-10-30 10:20:09 tile_plot.py:l54 INFO	start with matrice
+2025-10-30 10:20:09 tile_plot.py:l69 INFO	done with making the dendrogram to order the organisms on the plot
+2025-10-30 10:20:09 tile_plot.py:l104 INFO	Getting the gene name(s) and the number for each tile of the plot ...
+2025-10-30 10:20:09 tile_plot.py:l113 INFO	Done extracting names and numbers. Making the heatmap ...
+2025-10-30 10:20:10 tile_plot.py:l169 INFO	Drawing the figure itself...
+2025-10-30 10:20:12 tile_plot.py:l171 INFO	Done with the tile plot : './output/tile_plot.html' 
+2025-10-30 10:20:12 ucurve.py:l13 INFO	Drawing the U-shaped curve...
+2025-10-30 10:20:13 ucurve.py:l60 INFO	Done drawing the U-shaped curve : './output/Ushaped_plot.html'
+2025-10-30 10:20:13 writeFlat.py:l225 INFO	Writing the .csv file ...
+2025-10-30 10:20:13 writeFlat.py:l281 INFO	Writing the gene presence absence file ...
+2025-10-30 10:20:13 writeFlat.py:l213 INFO	Writing the gexf file for the pangenome graph...
+2025-10-30 10:20:13 writeFlat.py:l213 INFO	Writing the light gexf file for the pangenome graph...
+2025-10-30 10:20:13 writeFlat.py:l421 INFO	Writing the projection files...
+2025-10-30 10:20:13 writeFlat.py:l304 INFO	Writing pangenome statistics...
+2025-10-30 10:20:13 writeFlat.py:l305 INFO	Writing statistics on persistent duplication...
+2025-10-30 10:20:13 writeFlat.py:l106 INFO	Writing the json file for the pangenome graph...
+2025-10-30 10:20:13 writeFlat.py:l430 INFO	Writing the list of gene families for each partitions...
+2025-10-30 10:20:13 writeFlat.py:l301 INFO	Done writing the gene presence absence file : './output/gene_presence_absence.Rtab'
+2025-10-30 10:20:13 writeFlat.py:l456 INFO	Done writing the list of gene families for each partition
+2025-10-30 10:20:13 writeFlat.py:l326 INFO	Done writing stats on persistent duplication
+2025-10-30 10:20:13 writeFlat.py:l327 INFO	Writing genome per genome statistics (completeness and counts)...
+2025-10-30 10:20:13 writeFlat.py:l389 INFO	Done writing genome per genome statistics
+2025-10-30 10:20:13 writeFlat.py:l278 INFO	Done writing the matrix : './output/matrix.csv'
+2025-10-30 10:20:13 writeFlat.py:l222 INFO	Done writing the gexf file : './output/pangenomeGraph_light.gexf'
+2025-10-30 10:20:13 writeFlat.py:l222 INFO	Done writing the gexf file : './output/pangenomeGraph.gexf'
+2025-10-30 10:20:13 writeFlat.py:l427 INFO	Done writing the projection files
+2025-10-30 10:20:14 writeFlat.py:l113 INFO	Done writing the json file : './output/pangenomeGraph.json'
 Genes : 77147
 Organisms : 18
 Families : 6224
