@@ -7611,7 +7611,7 @@ show-coords<span class="w"> </span>-rcl<span class="w"> </span>-T<span class="w"
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Mash-Distanzen">Mash-Distanzen<a class="anchor-link" href="#Mash-Distanzen">¶</a></h1>
+<h2 id="Mash-distance-calculation">Mash-distance calculation<a class="anchor-link" href="#Mash-distance-calculation">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7626,8 +7626,8 @@ show-coords<span class="w"> </span>-rcl<span class="w"> </span>-T<span class="w"
 <div class="highlight hl-bash"><pre><span></span><span class="c1"># install Mash (if not installed)</span>
 <span class="nb">cd</span><span class="w"> </span>/home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes
 conda<span class="w"> </span>activate<span class="w"> </span>mash
-mash<span class="w"> </span>sketch<span class="w"> </span>-o<span class="w"> </span>./all<span class="w"> </span>*.fasta
-mash<span class="w"> </span>dist<span class="w"> </span>all.msh<span class="w"> </span>all.msh<span class="w"> </span>&gt;<span class="w"> </span>../mash/dist.tab
+mash<span class="w"> </span>sketch<span class="w"> </span>-o<span class="w"> </span>./all<span class="w"> </span>*.fasta<span class="w"> </span><span class="c1"># reduce sequences</span>
+mash<span class="w"> </span>dist<span class="w"> </span>all.msh<span class="w"> </span>all.msh<span class="w"> </span>&gt;<span class="w"> </span>../mash/dist.tab<span class="w"> </span><span class="c1">#calculate distance matrix</span>
 conda<span class="w"> </span>deactivate
 </pre></div>
 </div>
@@ -7672,7 +7672,7 @@ Writing to ./all.msh...
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Quality-Assessment-of-the-genomes">Quality Assessment of the genomes<a class="anchor-link" href="#Quality-Assessment-of-the-genomes">¶</a></h1>
+<h2 id="Quality-Assessment-of-the-genomes">Quality Assessment of the genomes<a class="anchor-link" href="#Quality-Assessment-of-the-genomes">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7683,7 +7683,7 @@ Writing to ./all.msh...
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="busco">busco<a class="anchor-link" href="#busco">¶</a></h2>
+<h3 id="busco-(completeness)">busco (completeness)<a class="anchor-link" href="#busco-(completeness)">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7697,15 +7697,10 @@ Writing to ./all.msh...
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-bash"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>busco
 <span class="nb">cd</span><span class="w"> </span>/home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes
-busco<span class="w"> </span>-i<span class="w"> </span>./DSM158.fasta<span class="w"> </span>-m<span class="w"> </span>genome<span class="w"> </span>-l<span class="w"> </span>rhodobacter_odb12<span class="w"> </span>-c<span class="w"> </span><span class="m">20</span><span class="w"> </span>-o<span class="w"> </span>DSM
-busco<span class="w"> </span>-i<span class="w"> </span>./GCF_000012905.2_ASM1290v2_genomic.fasta<span class="w"> </span>-m<span class="w"> </span>genome<span class="w"> </span>-l<span class="w"> </span>rhodobacter_odb12<span class="w"> </span>-c<span class="w"> </span><span class="m">20</span><span class="w"> </span>-o<span class="w"> </span>NCBI_Ref
-busco<span class="w"> </span>-i<span class="w"> </span>./GCF_049434525.1_MWCSPHH2ANNA_genomic.fasta<span class="w"> </span>-m<span class="w"> </span>genome<span class="w"> </span>-l<span class="w"> </span>rhodobacter_odb12<span class="w"> </span>-c<span class="w"> </span><span class="m">20</span><span class="w"> </span>-o<span class="w"> </span>SUBH2
+busco<span class="w"> </span>-i<span class="w"> </span>./DSM158.fasta<span class="w"> </span>-m<span class="w"> </span>genome<span class="w"> </span>-l<span class="w"> </span>rhodobacter_odb12<span class="w"> </span>-c<span class="w"> </span><span class="m">20</span><span class="w"> </span>-o<span class="w"> </span>DSM<span class="w"> </span><span class="c1"># strain DSM158</span>
+busco<span class="w"> </span>-i<span class="w"> </span>./GCF_000012905.2_ASM1290v2_genomic.fasta<span class="w"> </span>-m<span class="w"> </span>genome<span class="w"> </span>-l<span class="w"> </span>rhodobacter_odb12<span class="w"> </span>-c<span class="w"> </span><span class="m">20</span><span class="w"> </span>-o<span class="w"> </span>NCBI_Ref<span class="w"> </span><span class="c1"># ncbi reference</span>
+busco<span class="w"> </span>-i<span class="w"> </span>./GCF_049434525.1_MWCSPHH2ANNA_genomic.fasta<span class="w"> </span>-m<span class="w"> </span>genome<span class="w"> </span>-l<span class="w"> </span>rhodobacter_odb12<span class="w"> </span>-c<span class="w"> </span><span class="m">20</span><span class="w"> </span>-o<span class="w"> </span>SUBH2<span class="w"> </span><span class="c1"># substrain H2</span>
 conda<span class="w"> </span>deactivate
-mkdir<span class="w"> </span>busco
-cp<span class="w"> </span>-r<span class="w"> </span>./DSM/<span class="w"> </span>./busco
-cp<span class="w"> </span>-r<span class="w"> </span>./NCBI_Ref/<span class="w"> </span>./busco
-cp<span class="w"> </span>-r<span class="w"> </span>./SUBH2/<span class="w"> </span>./busco
-rm<span class="w"> </span>-r<span class="w"> </span>./DSM<span class="w"> </span>./NCBI_Ref<span class="w"> </span>./SUBH2
 </pre></div>
 </div>
 </div>
@@ -7872,7 +7867,7 @@ mkdir: cannot create directory ‘busco’: File exists
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="CheckM2">CheckM2<a class="anchor-link" href="#CheckM2">¶</a></h2>
+<h3 id="CheckM2-(completeness-&amp;-contamination)">CheckM2 (completeness &amp; contamination)<a class="anchor-link" href="#CheckM2-(completeness-&amp;-contamination)">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7923,7 +7918,7 @@ checkm2<span class="w"> </span>predict<span class="w"> </span>--threads<span cla
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Pangenome-construction-using-ppanggolin">Pangenome construction using ppanggolin<a class="anchor-link" href="#Pangenome-construction-using-ppanggolin">¶</a></h1>
+<h2 id="Pangenome-construction-using-ppanggolin">Pangenome construction using ppanggolin<a class="anchor-link" href="#Pangenome-construction-using-ppanggolin">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7985,6 +7980,17 @@ GCF_052246835.1.gbff^I/home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genome
 DSM158.gbk^I/home/Drives/HDD03_06T_SDE/anna/SyntenyPlotDSMSubH2/genomes/Annot/DSM158.gbk
 </pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8d7958fd-9547-4af7-816a-19f229529277">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Calculate the pangenome</p>
 </div>
 </div>
 </div>
