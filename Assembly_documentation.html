@@ -7542,7 +7542,21 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div>NanoPlot --summary sequencing_summary.txt -t 20 -o /path/to/output/directory
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c3ce5eb5-e3f4-415f-b63d-1a665c8d3e91">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-bash"><pre><span></span>NanoPlot<span class="w"> </span>--summary<span class="w"> </span>sequencing_summary.txt<span class="w"> </span>-t<span class="w"> </span><span class="m">20</span><span class="w"> </span>-o<span class="w"> </span>/path/to/output/directory
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2effe2d6-aacf-42b5-98ba-d14d2636a882">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7553,8 +7567,22 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div>filtlong --min_length 6000 calls.fastq &gt; reads_qc/ont_6k.fastq
-filtlong --keep_percent 90 reads_qc/ont_6k.fastq &gt; reads_qc/ont.fastq
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=759a36a4-7543-4827-a8a4-adf367242fc2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-bash"><pre><span></span>filtlong<span class="w"> </span>--min_length<span class="w"> </span><span class="m">6000</span><span class="w"> </span>calls.fastq<span class="w"> </span>&gt;<span class="w"> </span>reads_qc/ont_6k.fastq
+filtlong<span class="w"> </span>--keep_percent<span class="w"> </span><span class="m">90</span><span class="w"> </span>reads_qc/ont_6k.fastq<span class="w"> </span>&gt;<span class="w"> </span>reads_qc/ont.fastq
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=363c0b98-07ba-4a2c-9c68-b71ea872ace1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7565,7 +7593,21 @@ filtlong --keep_percent 90 reads_qc/ont_6k.fastq &gt; reads_qc/ont.fastq
 </div>
 </div>
 </div>
-</div>fastp --in1 reads_Illumina_1.fastq.gz --in2 reads_Illumina_2.fastq.gz --out1 reads_qc/illumina_1.fastq.gz --out2 reads_qc/illumina_2.fastq.gz --unpaired1 reads_qc/illumina_u.fastq.gz --unpaired2 reads_qc/illumina_u.fastq.gz
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1a22327c-cd0d-4c2b-9a22-930764fe4163">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-bash"><pre><span></span>fastp<span class="w"> </span>--in1<span class="w"> </span>reads_Illumina_1.fastq.gz<span class="w"> </span>--in2<span class="w"> </span>reads_Illumina_2.fastq.gz<span class="w"> </span>--out1<span class="w"> </span>reads_qc/illumina_1.fastq.gz<span class="w"> </span>--out2<span class="w"> </span>reads_qc/illumina_2.fastq.gz<span class="w"> </span>--unpaired1<span class="w"> </span>reads_qc/illumina_u.fastq.gz<span class="w"> </span>--unpaired2<span class="w"> </span>reads_qc/illumina_u.fastq.gz
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=174bedb5-879e-44be-8f84-da710fe56db2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7576,77 +7618,90 @@ filtlong --keep_percent 90 reads_qc/ont_6k.fastq &gt; reads_qc/ont.fastq
 </div>
 </div>
 </div>
-</div>trycycler subsample --reads reads_qc/ont.fastq --out_dir read_subsets --genome_size 4.5m
-threads=16  # change as appropriate for your system
-mkdir assemblies
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1cb6ec1b-6552-47d3-93ee-ebf2b5014f50">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-bash"><pre><span></span>trycycler<span class="w"> </span>subsample<span class="w"> </span>--reads<span class="w"> </span>reads_qc/ont.fastq<span class="w"> </span>--out_dir<span class="w"> </span>read_subsets<span class="w"> </span>--genome_size<span class="w"> </span><span class="m">4</span>.5m
+<span class="nv">threads</span><span class="o">=</span><span class="m">16</span><span class="w">  </span><span class="c1"># change as appropriate for your system</span>
+mkdir<span class="w"> </span>assemblies
 
-flye --nano-hq read_subsets/sample_01.fastq --threads "$threads" --out-dir assembly_01 &amp;&amp; cp assembly_01/assembly.fasta assemblies/assembly_01.fasta &amp;&amp; rm -r assembly_01
-miniasm_and_minipolish.sh read_subsets/sample_02.fastq "$threads" &gt; assembly_02.gfa &amp;&amp; any2fasta assembly_02.gfa &gt; assemblies/assembly_02.fasta &amp;&amp; rm assembly_02.gfa
-raven --threads "$threads" --disable-checkpoints read_subsets/sample_03.fastq &gt; assemblies/assembly_03.fasta
+flye<span class="w"> </span>--nano-hq<span class="w"> </span>read_subsets/sample_01.fastq<span class="w"> </span>--threads<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>--out-dir<span class="w"> </span>assembly_01<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cp<span class="w"> </span>assembly_01/assembly.fasta<span class="w"> </span>assemblies/assembly_01.fasta<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>-r<span class="w"> </span>assembly_01
+miniasm_and_minipolish.sh<span class="w"> </span>read_subsets/sample_02.fastq<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>&gt;<span class="w"> </span>assembly_02.gfa<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>any2fasta<span class="w"> </span>assembly_02.gfa<span class="w"> </span>&gt;<span class="w"> </span>assemblies/assembly_02.fasta<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>assembly_02.gfa
+raven<span class="w"> </span>--threads<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>--disable-checkpoints<span class="w"> </span>read_subsets/sample_03.fastq<span class="w"> </span>&gt;<span class="w"> </span>assemblies/assembly_03.fasta
 
-flye --nano-hq read_subsets/sample_04.fastq --threads "$threads" --out-dir assembly_04 &amp;&amp; cp assembly_04/assembly.fasta assemblies/assembly_04.fasta &amp;&amp; rm -r assembly_04
-miniasm_and_minipolish.sh read_subsets/sample_05.fastq "$threads" &gt; assembly_05.gfa &amp;&amp; any2fasta assembly_05.gfa &gt; assemblies/assembly_05.fasta &amp;&amp; rm assembly_05.gfa
-raven --threads "$threads" --disable-checkpoints read_subsets/sample_06.fastq &gt; assemblies/assembly_06.fasta
+flye<span class="w"> </span>--nano-hq<span class="w"> </span>read_subsets/sample_04.fastq<span class="w"> </span>--threads<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>--out-dir<span class="w"> </span>assembly_04<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cp<span class="w"> </span>assembly_04/assembly.fasta<span class="w"> </span>assemblies/assembly_04.fasta<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>-r<span class="w"> </span>assembly_04
+miniasm_and_minipolish.sh<span class="w"> </span>read_subsets/sample_05.fastq<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>&gt;<span class="w"> </span>assembly_05.gfa<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>any2fasta<span class="w"> </span>assembly_05.gfa<span class="w"> </span>&gt;<span class="w"> </span>assemblies/assembly_05.fasta<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>assembly_05.gfa
+raven<span class="w"> </span>--threads<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>--disable-checkpoints<span class="w"> </span>read_subsets/sample_06.fastq<span class="w"> </span>&gt;<span class="w"> </span>assemblies/assembly_06.fasta
 
-flye --nano-hq read_subsets/sample_07.fastq --threads "$threads" --out-dir assembly_07 &amp;&amp; cp assembly_07/assembly.fasta assemblies/assembly_07.fasta &amp;&amp; rm -r assembly_07
-miniasm_and_minipolish.sh read_subsets/sample_08.fastq "$threads" &gt; assembly_08.gfa &amp;&amp; any2fasta assembly_08.gfa &gt; assemblies/assembly_08.fasta &amp;&amp; rm assembly_08.gfa
-raven --threads "$threads" --disable-checkpoints read_subsets/sample_09.fastq &gt; assemblies/assembly_09.fasta
+flye<span class="w"> </span>--nano-hq<span class="w"> </span>read_subsets/sample_07.fastq<span class="w"> </span>--threads<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>--out-dir<span class="w"> </span>assembly_07<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cp<span class="w"> </span>assembly_07/assembly.fasta<span class="w"> </span>assemblies/assembly_07.fasta<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>-r<span class="w"> </span>assembly_07
+miniasm_and_minipolish.sh<span class="w"> </span>read_subsets/sample_08.fastq<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>&gt;<span class="w"> </span>assembly_08.gfa<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>any2fasta<span class="w"> </span>assembly_08.gfa<span class="w"> </span>&gt;<span class="w"> </span>assemblies/assembly_08.fasta<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>assembly_08.gfa
+raven<span class="w"> </span>--threads<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>--disable-checkpoints<span class="w"> </span>read_subsets/sample_09.fastq<span class="w"> </span>&gt;<span class="w"> </span>assemblies/assembly_09.fasta
 
-flye --nano-hq read_subsets/sample_10.fastq --threads "$threads" --out-dir assembly_10 &amp;&amp; cp assembly_10/assembly.fasta assemblies/assembly_10.fasta &amp;&amp; rm -r assembly_10
-miniasm_and_minipolish.sh read_subsets/sample_11.fastq "$threads" &gt; assembly_11.gfa &amp;&amp; any2fasta assembly_11.gfa &gt; assemblies/assembly_11.fasta &amp;&amp; rm assembly_11.gfa
-raven --threads "$threads" --disable-checkpoints read_subsets/sample_12.fastq &gt; assemblies/assembly_12.fasta
+flye<span class="w"> </span>--nano-hq<span class="w"> </span>read_subsets/sample_10.fastq<span class="w"> </span>--threads<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>--out-dir<span class="w"> </span>assembly_10<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>cp<span class="w"> </span>assembly_10/assembly.fasta<span class="w"> </span>assemblies/assembly_10.fasta<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>-r<span class="w"> </span>assembly_10
+miniasm_and_minipolish.sh<span class="w"> </span>read_subsets/sample_11.fastq<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>&gt;<span class="w"> </span>assembly_11.gfa<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>any2fasta<span class="w"> </span>assembly_11.gfa<span class="w"> </span>&gt;<span class="w"> </span>assemblies/assembly_11.fasta<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>assembly_11.gfa
+raven<span class="w"> </span>--threads<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>--disable-checkpoints<span class="w"> </span>read_subsets/sample_12.fastq<span class="w"> </span>&gt;<span class="w"> </span>assemblies/assembly_12.fasta
 
-trycycler cluster --assemblies assemblies/*.fasta --reads reads_qc/ont.fastq --out_dir trycycler
+trycycler<span class="w"> </span>cluster<span class="w"> </span>--assemblies<span class="w"> </span>assemblies/*.fasta<span class="w"> </span>--reads<span class="w"> </span>reads_qc/ont.fastq<span class="w"> </span>--out_dir<span class="w"> </span>trycycler
 
-trycycler reconcile --reads reads_qc/ont.fastq --cluster_dir trycycler/cluster_001
-trycycler reconcile --reads reads_qc/ont.fastq --cluster_dir trycycler/cluster_002
-trycycler reconcile --reads reads_qc/ont.fastq --cluster_dir trycycler/cluster_003
-trycycler reconcile --reads reads_qc/ont.fastq --cluster_dir trycycler/cluster_004
-trycycler reconcile --reads reads_qc/ont.fastq --cluster_dir trycycler/cluster_005
-trycycler reconcile --reads reads_qc/ont.fastq --cluster_dir trycycler/cluster_006
+trycycler<span class="w"> </span>reconcile<span class="w"> </span>--reads<span class="w"> </span>reads_qc/ont.fastq<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_001
+trycycler<span class="w"> </span>reconcile<span class="w"> </span>--reads<span class="w"> </span>reads_qc/ont.fastq<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_002
+trycycler<span class="w"> </span>reconcile<span class="w"> </span>--reads<span class="w"> </span>reads_qc/ont.fastq<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_003
+trycycler<span class="w"> </span>reconcile<span class="w"> </span>--reads<span class="w"> </span>reads_qc/ont.fastq<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_004
+trycycler<span class="w"> </span>reconcile<span class="w"> </span>--reads<span class="w"> </span>reads_qc/ont.fastq<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_005
+trycycler<span class="w"> </span>reconcile<span class="w"> </span>--reads<span class="w"> </span>reads_qc/ont.fastq<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_006
 
-trycycler msa --cluster_dir trycycler/cluster_001
-trycycler msa --cluster_dir trycycler/cluster_002
-trycycler msa --cluster_dir trycycler/cluster_003
-trycycler msa --cluster_dir trycycler/cluster_004
-trycycler msa --cluster_dir trycycler/cluster_005
-trycycler msa --cluster_dir trycycler/cluster_006
+trycycler<span class="w"> </span>msa<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_001
+trycycler<span class="w"> </span>msa<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_002
+trycycler<span class="w"> </span>msa<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_003
+trycycler<span class="w"> </span>msa<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_004
+trycycler<span class="w"> </span>msa<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_005
+trycycler<span class="w"> </span>msa<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_006
 
-trycycler partition --reads reads_qc/ont.fastq --cluster_dirs trycycler/cluster_*
+trycycler<span class="w"> </span>partition<span class="w"> </span>--reads<span class="w"> </span>reads_qc/ont.fastq<span class="w"> </span>--cluster_dirs<span class="w"> </span>trycycler/cluster_*
 
-trycycler consensus --cluster_dir trycycler/cluster_001
-trycycler consensus --cluster_dir trycycler/cluster_002
-trycycler consensus --cluster_dir trycycler/cluster_003
-trycycler consensus --cluster_dir trycycler/cluster_004
-trycycler consensus --cluster_dir trycycler/cluster_005
-trycycler consensus --cluster_dir trycycler/cluster_006
+trycycler<span class="w"> </span>consensus<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_001
+trycycler<span class="w"> </span>consensus<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_002
+trycycler<span class="w"> </span>consensus<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_003
+trycycler<span class="w"> </span>consensus<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_004
+trycycler<span class="w"> </span>consensus<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_005
+trycycler<span class="w"> </span>consensus<span class="w"> </span>--cluster_dir<span class="w"> </span>trycycler/cluster_006
 
-medaka_consensus -i trycycler/cluster_001/4_reads.fastq -d trycycler/cluster_001/7_final_consensus.fasta -o trycycler/cluster_001/medaka -m r104_e81_sup_g610
-mv trycycler/cluster_001/medaka/consensus.fasta trycycler/cluster_001/8_medaka.fasta
-rm -r trycycler/cluster_001/medaka trycycler/cluster_001/*.fai trycycler/cluster_001/*.mmi
+medaka_consensus<span class="w"> </span>-i<span class="w"> </span>trycycler/cluster_001/4_reads.fastq<span class="w"> </span>-d<span class="w"> </span>trycycler/cluster_001/7_final_consensus.fasta<span class="w"> </span>-o<span class="w"> </span>trycycler/cluster_001/medaka<span class="w"> </span>-m<span class="w"> </span>r104_e81_sup_g610
+mv<span class="w"> </span>trycycler/cluster_001/medaka/consensus.fasta<span class="w"> </span>trycycler/cluster_001/8_medaka.fasta
+rm<span class="w"> </span>-r<span class="w"> </span>trycycler/cluster_001/medaka<span class="w"> </span>trycycler/cluster_001/*.fai<span class="w"> </span>trycycler/cluster_001/*.mmi
 
-medaka_consensus -i trycycler/cluster_002/4_reads.fastq -d trycycler/cluster_002/7_final_consensus.fasta -o trycycler/cluster_002/medaka -m r104_e81_sup_g610
-mv trycycler/cluster_002/medaka/consensus.fasta trycycler/cluster_002/8_medaka.fasta
-rm -r trycycler/cluster_002/medaka trycycler/cluster_002/*.fai trycycler/cluster_002/*.mmi
+medaka_consensus<span class="w"> </span>-i<span class="w"> </span>trycycler/cluster_002/4_reads.fastq<span class="w"> </span>-d<span class="w"> </span>trycycler/cluster_002/7_final_consensus.fasta<span class="w"> </span>-o<span class="w"> </span>trycycler/cluster_002/medaka<span class="w"> </span>-m<span class="w"> </span>r104_e81_sup_g610
+mv<span class="w"> </span>trycycler/cluster_002/medaka/consensus.fasta<span class="w"> </span>trycycler/cluster_002/8_medaka.fasta
+rm<span class="w"> </span>-r<span class="w"> </span>trycycler/cluster_002/medaka<span class="w"> </span>trycycler/cluster_002/*.fai<span class="w"> </span>trycycler/cluster_002/*.mmi
 
-medaka_consensus -i trycycler/cluster_003/4_reads.fastq -d trycycler/cluster_003/7_final_consensus.fasta -o trycycler/cluster_003/medaka -m r104_e81_sup_g610
-mv trycycler/cluster_003/medaka/consensus.fasta trycycler/cluster_003/8_medaka.fasta
-rm -r trycycler/cluster_003/medaka trycycler/cluster_003/*.fai trycycler/cluster_003/*.mmi
+medaka_consensus<span class="w"> </span>-i<span class="w"> </span>trycycler/cluster_003/4_reads.fastq<span class="w"> </span>-d<span class="w"> </span>trycycler/cluster_003/7_final_consensus.fasta<span class="w"> </span>-o<span class="w"> </span>trycycler/cluster_003/medaka<span class="w"> </span>-m<span class="w"> </span>r104_e81_sup_g610
+mv<span class="w"> </span>trycycler/cluster_003/medaka/consensus.fasta<span class="w"> </span>trycycler/cluster_003/8_medaka.fasta
+rm<span class="w"> </span>-r<span class="w"> </span>trycycler/cluster_003/medaka<span class="w"> </span>trycycler/cluster_003/*.fai<span class="w"> </span>trycycler/cluster_003/*.mmi
 
-medaka_consensus -i trycycler/cluster_004/4_reads.fastq -d trycycler/cluster_004/7_final_consensus.fasta -o trycycler/cluster_004/medaka -m r104_e81_sup_g610
-mv trycycler/cluster_004/medaka/consensus.fasta trycycler/cluster_004/8_medaka.fasta
-rm -r trycycler/cluster_004/medaka trycycler/cluster_004/*.fai trycycler/cluster_004/*.mmi
+medaka_consensus<span class="w"> </span>-i<span class="w"> </span>trycycler/cluster_004/4_reads.fastq<span class="w"> </span>-d<span class="w"> </span>trycycler/cluster_004/7_final_consensus.fasta<span class="w"> </span>-o<span class="w"> </span>trycycler/cluster_004/medaka<span class="w"> </span>-m<span class="w"> </span>r104_e81_sup_g610
+mv<span class="w"> </span>trycycler/cluster_004/medaka/consensus.fasta<span class="w"> </span>trycycler/cluster_004/8_medaka.fasta
+rm<span class="w"> </span>-r<span class="w"> </span>trycycler/cluster_004/medaka<span class="w"> </span>trycycler/cluster_004/*.fai<span class="w"> </span>trycycler/cluster_004/*.mmi
 
-medaka_consensus -i trycycler/cluster_005/4_reads.fastq -d trycycler/cluster_005/7_final_consensus.fasta -o trycycler/cluster_005/medaka -m r104_e81_sup_g610
-mv trycycler/cluster_005/medaka/consensus.fasta trycycler/cluster_005/8_medaka.fasta
-rm -r trycycler/cluster_005/medaka trycycler/cluster_005/*.fai trycycler/cluster_005/*.mmi
+medaka_consensus<span class="w"> </span>-i<span class="w"> </span>trycycler/cluster_005/4_reads.fastq<span class="w"> </span>-d<span class="w"> </span>trycycler/cluster_005/7_final_consensus.fasta<span class="w"> </span>-o<span class="w"> </span>trycycler/cluster_005/medaka<span class="w"> </span>-m<span class="w"> </span>r104_e81_sup_g610
+mv<span class="w"> </span>trycycler/cluster_005/medaka/consensus.fasta<span class="w"> </span>trycycler/cluster_005/8_medaka.fasta
+rm<span class="w"> </span>-r<span class="w"> </span>trycycler/cluster_005/medaka<span class="w"> </span>trycycler/cluster_005/*.fai<span class="w"> </span>trycycler/cluster_005/*.mmi
 
-medaka_consensus -i trycycler/cluster_006/4_reads.fastq -d trycycler/cluster_006/7_final_consensus.fasta -o trycycler/cluster_006/medaka -m r104_e81_sup_g610
-mv trycycler/cluster_006/medaka/consensus.fasta trycycler/cluster_006/8_medaka.fasta
-rm -r trycycler/cluster_006/medaka trycycler/cluster_006/*.fai trycycler/cluster_006/*.mmi
+medaka_consensus<span class="w"> </span>-i<span class="w"> </span>trycycler/cluster_006/4_reads.fastq<span class="w"> </span>-d<span class="w"> </span>trycycler/cluster_006/7_final_consensus.fasta<span class="w"> </span>-o<span class="w"> </span>trycycler/cluster_006/medaka<span class="w"> </span>-m<span class="w"> </span>r104_e81_sup_g610
+mv<span class="w"> </span>trycycler/cluster_006/medaka/consensus.fasta<span class="w"> </span>trycycler/cluster_006/8_medaka.fasta
+rm<span class="w"> </span>-r<span class="w"> </span>trycycler/cluster_006/medaka<span class="w"> </span>trycycler/cluster_006/*.fai<span class="w"> </span>trycycler/cluster_006/*.mmi
 
-cat trycycler/cluster_*/8_medaka.fasta &gt; trycycler_medaka.fasta
-
+cat<span class="w"> </span>trycycler/cluster_*/8_medaka.fasta<span class="w"> </span>&gt;<span class="w"> </span>trycycler_medaka.fasta
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c7d1e768-7c87-432f-8db8-2eb3916e7674">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7657,15 +7712,29 @@ cat trycycler/cluster_*/8_medaka.fasta &gt; trycycler_medaka.fasta
 </div>
 </div>
 </div>
-</div>threads=16
-bwa index trycycler_medaka.fasta
-bwa mem -t "$threads" -a trycycler_medaka.fasta reads_qc/illumina_1.fastq.gz &gt; alignments_1.sam
-bwa mem -t "$threads" -a trycycler_medaka.fasta reads_qc/illumina_2.fastq.gz &gt; alignments_2.sam
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0bd88d90-3902-48d1-b6e3-98fa3641a8a3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-bash"><pre><span></span><span class="nv">threads</span><span class="o">=</span><span class="m">16</span>
+bwa<span class="w"> </span>index<span class="w"> </span>trycycler_medaka.fasta
+bwa<span class="w"> </span>mem<span class="w"> </span>-t<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>-a<span class="w"> </span>trycycler_medaka.fasta<span class="w"> </span>reads_qc/illumina_1.fastq.gz<span class="w"> </span>&gt;<span class="w"> </span>alignments_1.sam
+bwa<span class="w"> </span>mem<span class="w"> </span>-t<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>-a<span class="w"> </span>trycycler_medaka.fasta<span class="w"> </span>reads_qc/illumina_2.fastq.gz<span class="w"> </span>&gt;<span class="w"> </span>alignments_2.sam
 
-polypolish filter --in1 alignments_1.sam --in2 alignments_2.sam --out1 filtered_1.sam --out2 filtered_2.sam
+polypolish<span class="w"> </span>filter<span class="w"> </span>--in1<span class="w"> </span>alignments_1.sam<span class="w"> </span>--in2<span class="w"> </span>alignments_2.sam<span class="w"> </span>--out1<span class="w"> </span>filtered_1.sam<span class="w"> </span>--out2<span class="w"> </span>filtered_2.sam
 
-polypolish polish trycycler_medaka.fasta filtered_1.sam filtered_2.sam &gt; trycycler_medaka_polypolish.fasta
-rm *.bwt *.pac *.ann *.amb *.sa *.sam
+polypolish<span class="w"> </span>polish<span class="w"> </span>trycycler_medaka.fasta<span class="w"> </span>filtered_1.sam<span class="w"> </span>filtered_2.sam<span class="w"> </span>&gt;<span class="w"> </span>trycycler_medaka_polypolish.fasta
+rm<span class="w"> </span>*.bwt<span class="w"> </span>*.pac<span class="w"> </span>*.ann<span class="w"> </span>*.amb<span class="w"> </span>*.sa<span class="w"> </span>*.sam
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=71202257-7ffc-4c47-8c2a-8dd46e103b72">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7676,7 +7745,21 @@ rm *.bwt *.pac *.ann *.amb *.sa *.sam
 </div>
 </div>
 </div>
-</div>dnaapler all -i trycycler_medaka_polypolish.fasta -o output_directory_path -p r_sphaeroides -t 20
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=aabb7664-9dd8-404e-ab7a-ec2075f6e153">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-bash"><pre><span></span>dnaapler<span class="w"> </span>all<span class="w"> </span>-i<span class="w"> </span>trycycler_medaka_polypolish.fasta<span class="w"> </span>-o<span class="w"> </span>output_directory_path<span class="w"> </span>-p<span class="w"> </span>r_sphaeroides<span class="w"> </span>-t<span class="w"> </span><span class="m">20</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=048d619e-09d0-472c-8588-f1cf83aee606">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7687,7 +7770,21 @@ rm *.bwt *.pac *.ann *.amb *.sa *.sam
 </div>
 </div>
 </div>
-</div>dorado basecaller sup --emit-fastq pod5s &gt; calls.fastq
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=83b61639-ad61-4b3f-a910-1a1026dc56d4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-bash"><pre><span></span>dorado<span class="w"> </span>basecaller<span class="w"> </span>sup<span class="w"> </span>--emit-fastq<span class="w"> </span>pod5s<span class="w"> </span>&gt;<span class="w"> </span>calls.fastq
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=66919b5a-1434-4670-8e42-9c0043abe53d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7699,40 +7796,54 @@ rm *.bwt *.pac *.ann *.amb *.sa *.sam
 </div>
 </div>
 </div>
-</div>reads=ont.fastq.gz  # your read set goes here
-threads=20  # set as appropriate for your system (no more than 128)
-genome_size=$(autocycler helper genome_size --reads "$reads" --threads "$threads")  # can set this manually if you know the value
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c8bb7359-6474-4a66-8534-d3fc9a0d6a58">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-bash"><pre><span></span><span class="nv">reads</span><span class="o">=</span>ont.fastq.gz<span class="w">  </span><span class="c1"># your read set goes here</span>
+<span class="nv">threads</span><span class="o">=</span><span class="m">20</span><span class="w">  </span><span class="c1"># set as appropriate for your system (no more than 128)</span>
+<span class="nv">genome_size</span><span class="o">=</span><span class="k">$(</span>autocycler<span class="w"> </span>helper<span class="w"> </span>genome_size<span class="w"> </span>--reads<span class="w"> </span><span class="s2">"</span><span class="nv">$reads</span><span class="s2">"</span><span class="w"> </span>--threads<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="k">)</span><span class="w">  </span><span class="c1"># can set this manually if you know the value</span>
 
-# Step 1: subsample the long-read set into multiple files
-autocycler subsample --reads "$reads" --out_dir subsampled_reads --genome_size "$genome_size"
+<span class="c1"># Step 1: subsample the long-read set into multiple files</span>
+autocycler<span class="w"> </span>subsample<span class="w"> </span>--reads<span class="w"> </span><span class="s2">"</span><span class="nv">$reads</span><span class="s2">"</span><span class="w"> </span>--out_dir<span class="w"> </span>subsampled_reads<span class="w"> </span>--genome_size<span class="w"> </span><span class="s2">"</span><span class="nv">$genome_size</span><span class="s2">"</span>
 
-# Step 2: assemble each subsampled file
-mkdir assemblies
-for assembler in canu flye metamdbg miniasm necat nextdenovo plassembler raven; do
-    for i in 01 02 03 04; do
-        autocycler helper "$assembler" --reads subsampled_reads/sample_"$i".fastq --out_prefix assemblies/"$assembler"_"$i" --threads "$threads" --genome_size "$genome_size"
-    done
-done
+<span class="c1"># Step 2: assemble each subsampled file</span>
+mkdir<span class="w"> </span>assemblies
+<span class="k">for</span><span class="w"> </span>assembler<span class="w"> </span><span class="k">in</span><span class="w"> </span>canu<span class="w"> </span>flye<span class="w"> </span>metamdbg<span class="w"> </span>miniasm<span class="w"> </span>necat<span class="w"> </span>nextdenovo<span class="w"> </span>plassembler<span class="w"> </span>raven<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">01</span><span class="w"> </span><span class="m">02</span><span class="w"> </span><span class="m">03</span><span class="w"> </span><span class="m">04</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">        </span>autocycler<span class="w"> </span>helper<span class="w"> </span><span class="s2">"</span><span class="nv">$assembler</span><span class="s2">"</span><span class="w"> </span>--reads<span class="w"> </span>subsampled_reads/sample_<span class="s2">"</span><span class="nv">$i</span><span class="s2">"</span>.fastq<span class="w"> </span>--out_prefix<span class="w"> </span>assemblies/<span class="s2">"</span><span class="nv">$assembler</span><span class="s2">"</span>_<span class="s2">"</span><span class="nv">$i</span><span class="s2">"</span><span class="w"> </span>--threads<span class="w"> </span><span class="s2">"</span><span class="nv">$threads</span><span class="s2">"</span><span class="w"> </span>--genome_size<span class="w"> </span><span class="s2">"</span><span class="nv">$genome_size</span><span class="s2">"</span>
+<span class="w">    </span><span class="k">done</span>
+<span class="k">done</span>
 
-# Optional step: remove the subsampled reads to save space
-rm subsampled_reads/*.fastq
+<span class="c1"># Optional step: remove the subsampled reads to save space</span>
+rm<span class="w"> </span>subsampled_reads/*.fastq
 
-# Step 3: compress the input assemblies into a unitig graph
-autocycler compress -i assemblies -a autocycler_out
+<span class="c1"># Step 3: compress the input assemblies into a unitig graph</span>
+autocycler<span class="w"> </span>compress<span class="w"> </span>-i<span class="w"> </span>assemblies<span class="w"> </span>-a<span class="w"> </span>autocycler_out
 
-# Step 4: cluster the input contigs into putative genomic sequences
-autocycler cluster -a autocycler_out
+<span class="c1"># Step 4: cluster the input contigs into putative genomic sequences</span>
+autocycler<span class="w"> </span>cluster<span class="w"> </span>-a<span class="w"> </span>autocycler_out
 
-# Steps 5 and 6: trim and resolve each QC-pass cluster
-for c in autocycler_out/clustering/qc_pass/cluster_*; do
-    autocycler trim -c "$c"
-    autocycler resolve -c "$c"
-done
+<span class="c1"># Steps 5 and 6: trim and resolve each QC-pass cluster</span>
+<span class="k">for</span><span class="w"> </span>c<span class="w"> </span><span class="k">in</span><span class="w"> </span>autocycler_out/clustering/qc_pass/cluster_*<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span>autocycler<span class="w"> </span>trim<span class="w"> </span>-c<span class="w"> </span><span class="s2">"</span><span class="nv">$c</span><span class="s2">"</span>
+<span class="w">    </span>autocycler<span class="w"> </span>resolve<span class="w"> </span>-c<span class="w"> </span><span class="s2">"</span><span class="nv">$c</span><span class="s2">"</span>
+<span class="k">done</span>
 
-# Step 7: combine resolved clusters into a final assembly
-autocycler combine -a autocycler_out -i autocycler_out/clustering/qc_pass/cluster_*/5_final.gfa
+<span class="c1"># Step 7: combine resolved clusters into a final assembly</span>
+autocycler<span class="w"> </span>combine<span class="w"> </span>-a<span class="w"> </span>autocycler_out<span class="w"> </span>-i<span class="w"> </span>autocycler_out/clustering/qc_pass/cluster_*/5_final.gfa
 
-autocycler gfa2fasta -i autocycler_out/clustering/qc_pass/cluster_*/5_final.gfa -o autocycler_out/final/autocycler.fasta
+autocycler<span class="w"> </span>gfa2fasta<span class="w"> </span>-i<span class="w"> </span>autocycler_out/clustering/qc_pass/cluster_*/5_final.gfa<span class="w"> </span>-o<span class="w"> </span>autocycler_out/final/autocycler.fasta
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dc1a51bd-8c34-4651-95c8-aeb38affe8af">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7743,14 +7854,28 @@ autocycler gfa2fasta -i autocycler_out/clustering/qc_pass/cluster_*/5_final.gfa 
 </div>
 </div>
 </div>
-</div>pypolca run -a autocycler_out/final/autocycler.fasta -1 reads_qc/illumina_1.fastq.gz -2 reads_qc/illumina_2.fastq.gz -t 20 -o autocycler_out/final/autocycler_pypolca.fasta
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2bdcf5e2-c212-4269-b314-806a5c9d0437">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-bash"><pre><span></span>pypolca<span class="w"> </span>run<span class="w"> </span>-a<span class="w"> </span>autocycler_out/final/autocycler.fasta<span class="w"> </span>-1<span class="w"> </span>reads_qc/illumina_1.fastq.gz<span class="w"> </span>-2<span class="w"> </span>reads_qc/illumina_2.fastq.gz<span class="w"> </span>-t<span class="w"> </span><span class="m">20</span><span class="w"> </span>-o<span class="w"> </span>autocycler_out/final/autocycler_pypolca.fasta
 
-bwa index autocycler_out/final/autocycler_pypolca.fasta
-bwa mem -t 16 -a autocycler_out/final/autocycler_pypolca.fasta reads_qc/illumina_1.fastq.gz &gt; alignments_1.sam
-bwa mem -t 16 -a autocycler_out/final/autocycler_pypolca.fasta reads_qc/illumina_2.fastq.gz &gt; alignments_2.sam
-polypolish filter --in1 alignments_1.sam --in2 alignments_2.sam --out1 filtered_1.sam --out2 filtered_2.sam
-polypolish polish autocycler_out/final/autocycler_pypolca.fasta  filtered_1.sam filtered_2.sam &gt; autocycler_out/final/autocycler_pypolca_polypolish.fasta 
-rm *.amb *.ann *.bwt *.pac *.sa *.sam
+bwa<span class="w"> </span>index<span class="w"> </span>autocycler_out/final/autocycler_pypolca.fasta
+bwa<span class="w"> </span>mem<span class="w"> </span>-t<span class="w"> </span><span class="m">16</span><span class="w"> </span>-a<span class="w"> </span>autocycler_out/final/autocycler_pypolca.fasta<span class="w"> </span>reads_qc/illumina_1.fastq.gz<span class="w"> </span>&gt;<span class="w"> </span>alignments_1.sam
+bwa<span class="w"> </span>mem<span class="w"> </span>-t<span class="w"> </span><span class="m">16</span><span class="w"> </span>-a<span class="w"> </span>autocycler_out/final/autocycler_pypolca.fasta<span class="w"> </span>reads_qc/illumina_2.fastq.gz<span class="w"> </span>&gt;<span class="w"> </span>alignments_2.sam
+polypolish<span class="w"> </span>filter<span class="w"> </span>--in1<span class="w"> </span>alignments_1.sam<span class="w"> </span>--in2<span class="w"> </span>alignments_2.sam<span class="w"> </span>--out1<span class="w"> </span>filtered_1.sam<span class="w"> </span>--out2<span class="w"> </span>filtered_2.sam
+polypolish<span class="w"> </span>polish<span class="w"> </span>autocycler_out/final/autocycler_pypolca.fasta<span class="w">  </span>filtered_1.sam<span class="w"> </span>filtered_2.sam<span class="w"> </span>&gt;<span class="w"> </span>autocycler_out/final/autocycler_pypolca_polypolish.fasta<span class="w"> </span>
+rm<span class="w"> </span>*.amb<span class="w"> </span>*.ann<span class="w"> </span>*.bwt<span class="w"> </span>*.pac<span class="w"> </span>*.sa<span class="w"> </span>*.sam
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=986a8c9f-4b3e-4d02-ab77-da5a3f52926c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7761,7 +7886,21 @@ rm *.amb *.ann *.bwt *.pac *.sa *.sam
 </div>
 </div>
 </div>
-</div>dnaapler all -i autocycler_out/final/autocycler_pypolca_polypolish.fasta -o output_directory_path -p r_sphaeroides -t 20
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c69810af-0b02-4cfb-8ccf-486e0ce896f6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-bash"><pre><span></span>dnaapler<span class="w"> </span>all<span class="w"> </span>-i<span class="w"> </span>autocycler_out/final/autocycler_pypolca_polypolish.fasta<span class="w"> </span>-o<span class="w"> </span>output_directory_path<span class="w"> </span>-p<span class="w"> </span>r_sphaeroides<span class="w"> </span>-t<span class="w"> </span><span class="m">20</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </main>
 </body>
 </html>
