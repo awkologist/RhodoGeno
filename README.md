@@ -8,5 +8,6 @@ _Rhodobacter sphaeroides_ 2.4.1 substrain H2 has the potential to produce enviro
 
 ## Custom scripts for data processing & figure generation
 - [Commands used for the assemblies](https://awkologist.github.io/RhodoGeno/Assembly_documentation.html) (Bash)
+- [Commands used for the QC of the assemblies](https://awkologist.github.io/RhodoGeno/Qual_assessments.html) (Bash)
 - [Figure generation](https://awkologist.github.io/RhodoGeno/Supplementary_R_plots.html) (R)
 - [Data processing](https://awkologist.github.io/RhodoGeno/Bash_data_procressing.html) (Bash)
